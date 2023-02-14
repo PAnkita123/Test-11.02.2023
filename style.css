@@ -10,6 +10,9 @@
     border: 1px solid black;
 
 }
+#a{text-decoration: none;
+list-style-type: none;
+color:gray;}
 
 #navbar {
     height: 100px;
@@ -74,7 +77,9 @@
     color: white;
     width: 120px;
     height: 30px;
+    text-decoration: none;
 }
+
 
 #input {
     width: 300px;
