@@ -820,3 +820,56 @@ display: flex;}
 
 
 }
+
+#button-logo1{
+    height:45px ;
+    width:110px;
+    overflow: hidden;
+    border: 2px solid blue;
+}
+#button-logo2{
+    height:45px ;
+    width:110px;
+    overflow: hidden;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+#button-logo1>img{
+    height: 100%;
+    width:100%;
+}
+#button-logo2>img{
+    height: 100%;
+    width:100%;
+    
+}
+
+
+
+#login>form>input{
+    width:250px;
+    height: 20px;
+   
+    
+}
+
+#login{
+    height:500px;
+    width:350px;
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 20px;
+    line-height: 25px;
+}
+
+#input-button{
+    height:40px;
+    width:150px;
+    background-color:#d5a249;
+    border: none;
+}
+#input-button>input{
+    border: none;
+    background-color:#d5a249;
+}
