@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styling.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="signin">
+        <form onsubmit="login(event)">
+            <h2>Welcome to AJIO</h2>
+            <small>Join / Sign In using</small><br/>
+            <button id="button-logo1"><img src="./fb1.png"/></button><button id="button-logo2"><img src="./google.png"/></button><br />
+            <label>Email</label><br />
+            <input id="email" type="email"><br />
+            <label>Password</label><br />
+            <input id="password" type="password" placeholder="At least 6 characters"><br />
+            <a href="./forget-pass.html">Forget Password?</a>
+            <small style="display: flex;">By Signing In, I agree to Terms and Conditions.</small><br>
+            <button id="input-button"><input type="submit" value="continue"></button>  
+        </form>
+
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

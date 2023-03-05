@@ -873,3 +873,29 @@ display: flex;}
     border: none;
     background-color:#d5a249;
 }
+#signin{
+    height:350px;
+    width:350px;
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 20px;
+    line-height: 25px;
+}
+#change{
+    height:350px;
+    width:350px;
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 20px;
+    line-height: 25px;
+
+}
+
+#set-pass>button{
+    height:40px;
+    width:150px;
+    background-color:#d5a249;
+    border: none;
+}
