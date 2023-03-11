@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Cart</h1>
+        <!-- <button onclick="logout()">logout</button> -->
+    <!-- </div> -->
+    <div id="cartProducts">
+
+    </div>
+    <script>
+        window.onload=function(){
+            var dataFromLS=JSON.parse(localStorage.getItem("currentUser"));
+            if(!dataFromLS){
+                window.location.href="/login.html"
+                alert("Can't access cart without login, please login first!")
+            }else{
+                var dataFromLS=JSON.parse(localStorage.getItem("userData"));
+                var currentUser=JSON.parse(localStorage.getItem("currentUser"));
+                var divFromHtml=document.getElementById("cartProducts");
+                var cartProducts;
+                var flag=false;
+                for(var i=0;i<dataFromLS.length;i++){
+                    if(dataFromLS[i].email===currentUser["curent-user-email"] && dataFromLS[i].cartProducts){
+                        cartProducts=dataFromLS[i].cartProducts;
+                        flag=true;
+                    }
+
+                }if(flag===false){
+                    alert("No products added to cart, go and buy some products!")
+                }else{
+                    console.log(cartProducts,'cartProducts')
+                    var productswithHTML=[];
+                    for(var i=0;i<cartProducts.length;i++){
+
+                        productswithHTML+=`<div><img src="${cartProducts[i].image}"<br/><h1>${cartProducts[i].name}</h1><br/><p>${cartProducts[i].price}</p></div>`
+                        
+                    }
+                    divFromHtml.innerHTML=productswithHTML;
+                }
+
+
+
+
+            }
+        }
+
+        function buyProducts(){
+            var dataFromLS=JSON.parse(localStorage.getItem("userData"));
+            var currentUser=JSON.parse(localStorage.getItem("currentUser"));
+
+            var updatedUser=[];
+
+            for (var i=0;i<dataFromLS.length;i++){
+                if(dataFromLS[i].email===currentUser["curent-user-email"] && dataFromLS[i].cartProducts){
+                dataFromLS[i].cartProducts=[];
+                updatedUser.push(dataFromLS[i])
+            }else{
+                updatedUser.push(dataFromLS[i])
+            }
+
+        }
+        console.log(updatedUser,"updatedUser")
+        localStorage.setItem("userData",JSON.stringify(updatedUser));
+        window.location.href="/home.html"
+        alert("Products will deliver soon.")
+    }
+    </script>
+
+    
+    <!-- <script src="./products.js"></script> -->
+</body>
+</html>

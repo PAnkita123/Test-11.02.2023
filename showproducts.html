@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styelsheet" href="./style.css">
+    <link rel="styelsheet" href="./styling.css">
+    <script src="https://kit.fontawesome.com/74285856ad.js" crossorigin="anonymous"></script>
+    <title>Products</title>
+    <style>
+        #screen {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: 1300px;
+            margin-top: 100px;
+           
+        }
+
+        #screen>div {
+            width: 30%;
+            height: 590px;
+            border: 1px solid black;
+            margin: 10px;
+            margin-top: 50px;
+        }
+
+        #screen>div>img {
+            width: 100%;
+            height: 75%;
+        }
+        #screen>div>button{
+            height:30px;
+            width:100px;
+            background-color: grey;
+            border: none;
+            margin-left: 30%;
+        }
+        
+        #screen>div>h1 {
+            font-size: 20px;
+        }
+        
+        #screen>div>p {
+            font-size: 20px;
+        }
+        #screen-2{
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+        }
+        #sidebar{
+            height:1000px;
+            /* border: 1px solid black; */
+            width:20%;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        #navbar {
+    height: 100px;
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    box-shadow: 10px;
+    color: black;
+    background-color: white;
+    position: fixed;
+    box-shadow: 2px 2px  grey;
+}
+
+#navbar>div {
+    height: 100px;
+    width: 30%;
+    border: none;
+    display: flex;
+
+}
+
+#navbar>div:nth-child(1)>h1 {
+    font-size: 45px;
+    padding-left: 100px;
+    padding-top: 20px;
+color:#002244}
+
+    #navbar>div:nth-child(2)>div {
+        height: 100px;
+        width: 80px;
+        border: none;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    
+    #navbar>div:nth-child(2)>div>h4 {
+        margin-top: 60px;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    
+    #navbar>div:nth-child(2)>div:nth-child(5) {
+        width: 120px;
+    }
+    
+    #navbar>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #navbar>div:nth-child(3)>div {
+        height: 50%;
+        width: 100%;
+        /* border:1px solid black; */
+        /* display: flex; */
+    }
+    
+    #button {
+        background-color: black;
+        color: white;
+        width: 120px;
+        height: 30px;
+    }
+    #button>a{
+        text-decoration: none;
+        list-style-type: none;
+        color:white;
+    }
+    
+    #input {
+        width: 300px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid black;
+        margin-top: 10px;
+    }
+    
+    #button-2 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #002244;
+        border: none;
+    }
+    
+    #button-3 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #002244;
+        border: none;
+    }
+    #refine{
+        height:330px;
+        /* border:1px solid black; */
+    }
+    #refine>div{
+        border-bottom: 0.5px solid grey;
+        height:40px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <diV id="first-page">
+        <diV id="navbar">
+            <diV>
+                <h1>AJIO</h1>
+            </diV>
+            <diV>
+                <diV>
+                    <h4>MEN</h4>
+
+                </diV>
+                <diV>
+                    <h4>WOMEN</h4>
+                </diV>
+                <diV>
+                    <h4>KIDS</h4>
+                </diV>
+                <diV>
+                    <h4>INDIE</h4>
+                </diV>
+                <diV>
+                    <h4>HOME AND KITCHEN</h4>
+                </diV>
+            </diV>
+            <diV>
+                <div>
+                    <p><small>Sign In / Join AJIO&nbsp;&nbsp;&nbsp;Customer Care&nbsp;&nbsp;&nbsp;</small><button
+                            id="button">Visit AJIOLUXE</button></p>
+                </div>
+                <div>
+                    <input id="input" type="text" placeholder="Search AJIO">
+                    <button id="button-2"><i class="fa-regular fa-heart fa-lg" style="color:white"></i></button>
+                    <button id="button-3"><i class="fa-thin fa-bag-shopping fa-lg" style="color:white"></i></button>
+                </div>
+            </diV>
+        </diV>
+    <div id="screen-2">
+        <div id="sidebar">
+            <p>Home / Men /Western Wear /Shirts</p>
+            <h2>Refine By</h2>
+            <div id="refine">
+                <div>Gender</div>
+                <div>Category</div>
+                <div>Price</div>
+                <div>Brands</div>
+                <div>Occasion</div>
+                <div>Discounts</div>
+                <div>Colors</div>
+                <div>Size & Fit</div>
+            </div>
+            <h2>More Filters</h2>
+            <div id="refine">
+                <div>Style Type</div>
+                <div>Sleeve</div>
+                <div>Pattern</div>
+                <div>Feature</div>
+                <div>Character</div>
+                <div>Pack Type</div>
+                <div>Collar</div>
+                <div>Shape</div>
+            </div>
+        </div>
+        <div id="screen">
+    
+        </div>
+
+        <div></div>
+    </div>
+
+    <script src='./showproducts.js'></script>
+    
+</body>
+
+</html>
